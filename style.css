@@ -1,0 +1,151 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.maindiv{
+    
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+   
+   width:100vw;
+   height: 100vh;
+   gap: 3vh;
+   background:  #3B4664;
+   
+   
+    
+}
+.box1{
+    
+    height: 16vh;
+    width: 26vw;
+    padding-right: 3vw;
+    background-color: #181F32;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    
+    font-size: 5vh;
+    font-weight: 700;
+    text-align: right;
+    margin-top: 17vh;
+
+    
+}
+.div2{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    height: 48vh;
+    width: 29vw;
+    background: #252D44;
+    border-radius: 15px;
+
+    font-size: larger;
+    font-weight: 700;
+
+
+}
+.gridcont1{
+    display: flex;
+    gap: 20px;
+}
+.gridcont2{
+    display: flex;
+    gap: 20px;
+}
+.button7, .button8, .button9{
+    height: 6.5vh;
+    width: 5.4vw;
+    background: #EAE3DB;
+    border-radius: 10px;
+
+    font-size: larger;
+    font-weight: 700;
+    color: #3B4664;
+    
+    
+}
+
+
+.buttondel{
+    height: 6.5vh;
+    width: 5.4vw;
+    color: #EAE3DB;
+    border-radius: 10px;
+    background: #647299;
+
+    font-size: large;
+    font-weight: 700;
+    
+
+    
+}
+.button4, .button5, .button6, .buttonsum{
+    height: 6.5vh;
+    width: 5.4vw;
+    background: #EAE3DB;
+    border-radius: 10px;
+
+    font-size: larger;
+    font-weight: 700;
+    color: #3B4664;
+    
+}
+
+.button1, .button2, .button3, .button-{
+    height: 6.5vh;
+    width: 5.4vw;
+    background: #EAE3DB;
+    border-radius: 10px;
+
+    font-size: larger;
+    font-weight: 700;
+    color: #3B4664;
+    
+}
+
+.buttonpt, .button0, .buttondiv, .buttonx{
+    height: 6.5vh;
+    width: 5.4vw;
+    background: #EAE3DB;
+    border-radius: 10px;
+
+    font-size: larger;
+    font-weight: 700;
+    color: #3B4664;
+   
+    
+}
+
+.buttonreset{
+    height: 6.5vh;
+    width: 12.2vw;
+    color: #EAE3DB;
+    background: #647299;
+    border-radius: 10px;
+
+    font-size: large;
+    font-weight: 700;
+    
+    
+    
+}
+.buttoneq{
+    height: 6.5vh;
+    width: 12.2vw;
+    color: #EAE3DB;
+    background: #D13F30;
+    border-radius: 10px;
+
+    font-size: larger;
+    font-weight: 700;
+    
+}
+
