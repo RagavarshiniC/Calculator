@@ -10,11 +10,15 @@ document.addEventListener('DOMContentLoaded', function () {
             const buttonText = this.textContent
             
             const lastChar = expression.slice(-1);
-            
+            let lc = lastChar;
             if ((isOperator(lastChar) || lastChar === '.') && (isOperator(buttonText) || buttonText === '.')) {
                 return; 
             }
+            if ((expression === '' || expression === '0') && (buttonText === 'x' || buttonText === '/')) {
+                return; 
+            }
 
+            
             if (buttonText === 'RESET') {
                 expression = '0';
             } else if (buttonText === '=') {
@@ -28,6 +32,8 @@ document.addEventListener('DOMContentLoaded', function () {
             else if (lastChar === '' && buttonText === "0") {
                 expression = '0';
             }
+           
+            
              else {
                 if (expression === '0'&& buttonText === ".") {
                     expression += buttonText;
@@ -40,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }
             
-            if (expression.length < 12) {
+            if (expression.length < 12 ) {
             inputBox.value = expression;
         }
         });
@@ -48,11 +54,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     function evaluateExpression(expression) {
+        var correctedExpression = expression.replace(/x/g, "*");
         try {
-            let result = eval(expression);
+            let result = eval(correctedExpression);
             
             result = parseFloat(result.toFixed(3));
-            expression = result.toString();
+            correctedExpression = result.toString();
             return result.toString();
         } catch (error) {
             return 'Error';
@@ -60,6 +67,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function isOperator(char) {
-        return ['+', '-', '*', '/'].includes(char);
+        return ['+', '-', 'x', '/'].includes(char);
     }
 });
